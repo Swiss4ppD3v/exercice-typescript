@@ -12,7 +12,7 @@ export function removeNumbersBelowThreshold(
   threshold: number,
 ): number[] | [] {
   // Write your code here
-   if (array.length < 2) {
+  if (array.length < 2) {
     return [];
   }
   return array.filter((num) => num >= threshold);
@@ -24,10 +24,12 @@ export function filterStringByLength(
   maxLength: number,
 ): string[] | [] {
   // Write your code here
-  return array.filter(string => string.length >= minLength && string.length <= maxLength); 
-} 
+  return array.filter((string) =>
+    string.length >= minLength && string.length <= maxLength
+  );
+}
 
 export function getOnlyTheLowercaseLettersOfTheString(string: string): string {
   // Write your code here
-  return string .replace(/[^a-z]/g, '');
+  return string.replace(/[^a-z]/g, "");
 }

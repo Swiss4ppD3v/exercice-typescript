@@ -43,8 +43,9 @@ export function addTheRequiredTypes(
  */
 export function countElementsInAnArrayOfUnknown(
   array: unknown[],
-) /** Return type ? */ {
+):number /** Return type ? */ {
   // Write your code here
+  return array.length;
 }
 
 /**
